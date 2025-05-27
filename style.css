@@ -151,3 +151,43 @@ body {
   .dropdown-menu a:hover {
     background-color: #f9f9f9;
   }
+
+
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 60px;
+    width: 100%;
+    height: 150%;
+    border-radius: 0;
+    position: relative;
+    background: linear-gradient(to bottom, #f9f9f9 80%, rgba(249, 249, 249, 0));
+  }
+
+  .about-text {
+    max-width: 500px;
+    color: #4d1d28;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4d1d28;
+    font-family: 'Georgia', serif;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .about-image img {
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.15);
+    align-content: center;
+  }
