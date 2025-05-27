@@ -46,11 +46,11 @@ body {
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   
-  nav button {
+  nav a {
     background-color: #f2c899;
-    border: none;
     padding: 10px 18px;
     font-weight: bold;
     color: #4d1d28;
@@ -58,6 +58,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
+    text-decoration: none;
   }
   
   nav button:hover {
@@ -106,16 +107,16 @@ body {
 
   .dropdown-button {
     background-color: #f2c899;
-    border: none;
-    padding: 10px 18px;
-    font-weight: bold;
-    color: #4e1d29;
-    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    border-radius: 6px;
     text-decoration: none;
+    color: 4d1d28;
+    font-weight: bold;
   }
+
+
 
   .dropdown-button:hover {
     background-color: #f0f0f0;
@@ -125,13 +126,12 @@ body {
     display: none;
     position: absolute;
     top: 110%;
-    left: 0;
     background-color: #f2c899;
     border: 1px solid #4e1d29;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px 0;
-    min-width: 200px;
+    min-width: 140px;
     z-index: 100;
   }
 
