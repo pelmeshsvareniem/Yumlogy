@@ -1,3 +1,64 @@
+
+  .dark-mode {
+    background-color: #641B2E;
+    color: #FBDB93;
+
+    nav a {
+      background-color: #8A2D3B;
+      color: #FBDB93;
+      box-shadow: 2px 2px 4px rgba(254, 254, 254, 0.1);;
+      transition: background-color 0.2s;
+    }
+  
+    nav a:hover {
+      background-color: #f9f9f9;
+    }
+
+    .dropdown-button {
+      background-color: #8A2D3B;
+      color: #FBDB93;
+    }
+  
+    .dropdown-button:hover {
+      background-color: #641B2E;
+    }
+  
+    .dropdown-menu {
+      background-color: #641B2E;
+      border: 1px solid #8A2D3B;
+      box-shadow: 0 4px 8px rgba(250, 250, 250, 0.181);
+    }
+  
+    .dropdown-container:hover .dropdown-menu {
+      box-shadow: 0 4px 8px rgba(250, 248, 248, 0.1);
+    }
+  
+    .dropdown-menu a {
+      color: #FBDB93;
+    }
+  
+    .dropdown-menu a:hover {
+      background-color: #641B2E;
+    }
+
+    footer {
+      background: linear-gradient(to top, #BE5B50 20%, #BE5B50 60%);
+    }
+    
+    .footer-links {
+      color: #FBDB93;
+    }
+    
+    .footer-links a {
+      color: #FBDB93;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+  }
+
 body {
     margin: 0;
     max-width: 100vw;
@@ -8,8 +69,24 @@ body {
     align-items: center;
     padding: 40px 20px;
     font-family: sans-serif;
+    padding: 20px;
   }
 
+  #themeToggle {
+    float: right;
+    margin: 20px;
+    background-color: #BE5B50;
+    color: #FFF7D1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #themeToggle:hover {
+    background-color: #BE5B50;
+  }
+  
   .logo-image {
     max-width: 450px;
     height: auto;
@@ -27,28 +104,28 @@ body {
   }
   
   nav a {
-    background-color: #f2c899;
+    background-color: #FFECC8;
     padding: 10px 18px;
     font-weight: bold;
-    color: #4d1d28;
+    color: #BE5B50;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
     text-decoration: none;
   }
-  
-  nav button:hover {
-    background-color: #f6d4a5;
+
+  nav a:hover {
+    background-color: #f9f9f9;
   }
-  
+
   nav button span {
     font-size: 12px;
   }
   footer {
     width: 100%;
     margin-top: auto;
-    background: linear-gradient(to top, #f8c78b 20%, #fde6c4 60%);
+    background: linear-gradient(to top, #FFD09B 20%, #FFD09B 60%);
     padding: 500px 20px 20px;
     display: flex;
     justify-content: flex-end;
@@ -70,12 +147,6 @@ body {
   .footer-links a:hover {
     text-decoration: underline;
   }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
 
   .dropdown-container {
     position: relative;
@@ -83,27 +154,27 @@ body {
   }
 
   .dropdown-button {
-    background-color: #f2c899;
+    background-color: #FFECC8;
     padding: 10px 30px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 6px;
     text-decoration: none;
-    color: 4d1d28;
+    color: #BE5B50;
     font-weight: bold;
   }
 
 
 
   .dropdown-button:hover {
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
   }
 
   .dropdown-menu {
     display: none;
     position: absolute;
     top: 110%;
-    background-color: #f2c899;
+    background-color: #FFECC8;
     border: 1px solid #4e1d29;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -120,7 +191,7 @@ body {
   .dropdown-menu a {
     display: block;
     padding: 8px 16px;
-    color: #4d1d28;
+    color: #BE5B50;
     text-decoration: none;
     font-weight: bold;
   }
@@ -217,3 +288,91 @@ body {
     font-weight: bold;
   }
   
+
+  .authors-section { 
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%; 
+}
+
+.section-title {
+    font-family: 'Georgia', serif; 
+    font-size: 2.8em;
+    color: #8B0000;
+    margin-bottom: 60px;
+    font-style: italic; 
+}
+
+.author-cards-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 40px; 
+}
+
+.author-card {
+    background-color: #FFF7D1; 
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+    width: 100%;
+    max-width: 800px; 
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-right: 30%;
+}
+
+.author-card.middle-card {
+    align-self: flex-end;
+    margin-right: 5%;
+}
+
+.author-name {
+    font-family: 'Georgia', serif;
+    font-size: 1.8em;
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.author-description {
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2em;
+    }
+
+    .author-card {
+        padding: 25px;
+        max-width: 90%; 
+    }
+
+    .author-card.middle-card {
+        align-self: center;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .author-card {
+        padding: 20px;
+    }
+
+    .author-name {
+        font-size: 1.5em;
+    }
+
+    .author-description {
+        font-size: 1em;
+    }
+}
