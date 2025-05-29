@@ -9,6 +9,12 @@
   <button onclick="myFunction()">Go to dark mode</button>
 </head>
 <body>
+  <script>
+    function goToLogin() {
+      window.location.href = "login.html"
+    }
+  </script>
+
   <a href="index.html"><img src="Image/logo.png" class="logo-image" /></a>
 
   <nav>
@@ -29,7 +35,7 @@
     <a href="top5.html">Top 5 recipes</a>
   <a href="upload.html">Upload</a>
   <a href="about.html">About</a>
-  <a href="login.html">My profile</a>
+  <a @click="goToLogin">My profile</a>
 </nav>
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
