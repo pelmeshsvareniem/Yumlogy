@@ -1,0 +1,3 @@
+[submodule "Yumlogy"]
+    path = Yumlogy
+    url = https://github.com/USERNAME/Yumlogy.git
