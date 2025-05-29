@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Judson:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
   .dark-mode {
     background-color: #641B2E;
@@ -68,7 +69,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    font-family: sans-serif;
+    font-family: "judson";
     padding: 20px;
   }
 
@@ -341,38 +342,4 @@ body {
     font-size: 1.1em;
     color: #555;
     line-height: 1.5;
-}
-
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2.2em;
-    }
-
-    .author-card {
-        padding: 25px;
-        max-width: 90%; 
-    }
-
-    .author-card.middle-card {
-        align-self: center;
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .section-title {
-        font-size: 1.8em;
-    }
-
-    .author-card {
-        padding: 20px;
-    }
-
-    .author-name {
-        font-size: 1.5em;
-    }
-
-    .author-description {
-        font-size: 1em;
-    }
 }
